@@ -2,7 +2,7 @@
   "name": "agentflow-vscode",
   "displayName": "AgentFlow",
   "description": "Syntax Highlighting for AgentFlow Prompting Language",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "engines": {
     "vscode": "^1.93.0"
   },
@@ -10,16 +10,25 @@
     "Programming Languages"
   ],
   "contributes": {
-    "languages": [{
-      "id": "agentflow",
-      "aliases": ["AgentFlow", "agentflow"],
-      "extensions": [".af"],
-      "configuration": "./language-configuration.json"
-    }],
-    "grammars": [{
-      "language": "agentflow",
-      "scopeName": "source.af",
-      "path": "./syntaxes/agentflow.tmLanguage.json"
-    }]
+    "languages": [
+      {
+        "id": "agentflow",
+        "aliases": [
+          "AgentFlow",
+          "agentflow"
+        ],
+        "extensions": [
+          ".af"
+        ],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "agentflow",
+        "scopeName": "source.af",
+        "path": "./syntaxes/agentflow.tmLanguage.json"
+      }
+    ]
   }
 }

@@ -3,23 +3,31 @@
 	"name": "AgentFlow",
 	"patterns": [
 		{
-			"include": "#title"
+			"include": "#titleKeyword"
+		},
+		{
+			"include": "#titleContent"
 		},
 		{
 			"include": "#variable"
 		}
 	],
 	"repository": {
-		"title": {
-			"match": "^(\\.title)\\s+(.*)$",
+		"titleKeyword": {
+			"match": "^(\\.title)\\s+([A-Za-z\\s]+)$",
 			"captures": {
 				"1": {
-					"name": "keyword.control.agentflow"
+					"name": "keyword.control.title.agentflow"
 				},
 				"2": {
 					"name": "entity.name.function.agentflow"
 				}
 			}
+		},
+		"titleContent": {
+			"begin": "^(?<=\\.title\\s+[A-Za-z\\s]+$)",
+			"end": "(?=^\\.title)",
+			"name": "string.unquoted.agentflow"
 		},
 		"variable": {
 			"match": "<!(\\w+)>",
