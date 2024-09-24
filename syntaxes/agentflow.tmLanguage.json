@@ -10,6 +10,9 @@
 		},
 		{
 			"include": "#variable"
+		},
+		{
+			"include": "#titleHover"
 		}
 	],
 	"repository": {
@@ -36,6 +39,11 @@
 					"name": "variable.other.agentflow"
 				}
 			}
+		},
+		"titleHover": {
+			"match": "\\.title",
+			"name": "keyword.control.title.agentflow",
+			"comment": "title of the prompt"
 		}
 	},
 	"scopeName": "source.af"
