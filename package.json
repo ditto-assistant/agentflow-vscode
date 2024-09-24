@@ -1,5 +1,9 @@
 {
   "name": "agentflow-vscode",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/omniaura/agentflow-vscode.git"
+  },
   "displayName": "AgentFlow",
   "description": "Syntax Highlighting for AgentFlow Prompting Language",
   "version": "0.1.0",
