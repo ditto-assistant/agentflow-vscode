@@ -1,65 +1,69 @@
 # agentflow-vscode README
 
-This is the README for your extension "agentflow-vscode". After writing up a brief description, we recommend including the following sections.
+## What is AgentFlow?
 
-## Features
+AgentFlow is a prompting language designed to generate LLM (Large Language Model) Agent code in the language of your choice. It provides a simple and intuitive syntax that allows developers to easily create prompts for AI agents without getting in the way of the creative process.
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+Key features of AgentFlow:
+- Supports code generation for Python, TypeScript, and JavaScript (with more languages planned)
+- Uses a .af file extension
+- Employs an ultra-simple syntax focused on efficient prompting
 
-For example if there is an image subfolder under your extension project workspace:
+## Current Extension Features
 
-\!\[feature X\]\(images/feature-x.png\)
+This VSCode extension currently provides:
+- Syntax highlighting for AgentFlow (.af) files
 
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+**Note:** A Language Server Protocol (LSP) implementation is planned for future releases to provide more advanced features.
 
-## Requirements
+## AgentFlow Syntax Overview
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
+AgentFlow uses a minimalist syntax:
 
-## Extension Settings
+1. Variables:
+   ```
+   <!variable_name>
+   ```
+   Defines a variable which becomes a string input in code generation.
 
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
+2. Titles:
+   ```
+   .title This Is The Title Of The Section
+   ```
+   The rest of the line after `.title` becomes the title. Code generation automatically converts the title to camelCase or snake_case based on language conventions.
 
-For example:
+## Installation
 
-This extension contributes the following settings:
+[Provide installation instructions once the extension is published]
 
-* `myExtension.enable`: Enable/disable this extension.
-* `myExtension.thing`: Set to `blah` to do something.
+## Usage
 
-## Known Issues
-
-Calling out known issues can help limit users opening duplicate issues against your extension.
+1. Install the AgentFlow VSCode extension
+2. Create a new file with the `.af` extension in VSCode
+3. Start writing your AgentFlow prompts using the syntax described above
+4. Enjoy syntax highlighting for your AgentFlow files
 
 ## Release Notes
 
-Users appreciate release notes as you update your extension.
+### 0.0.1
+- Initial release of AgentFlow syntax highlighting
 
-### 1.0.0
+## Planned Features
 
-Initial release of ...
+- Language Server Protocol (LSP) implementation for enhanced functionality
+- Code generation integration within VSCode
+- Support for additional programming languages
 
-### 1.0.1
+## Contributing
 
-Fixed issue #.
+If you'd like to contribute to the development of this extension or the AgentFlow language, please [provide information on how to contribute].
 
-### 1.1.0
+## License
 
-Added features X, Y, and Z.
+[Include your chosen license information here]
 
 ---
 
-## Working with Markdown
+For more information on AgentFlow and its capabilities, please visit [your website or repository link].
 
-You can author your README using Visual Studio Code. Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux).
-* Toggle preview (`Shift+Cmd+V` on macOS or `Shift+Ctrl+V` on Windows and Linux).
-* Press `Ctrl+Space` (Windows, Linux, macOS) to see a list of Markdown snippets.
-
-## For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**
+**Enjoy using AgentFlow!**
