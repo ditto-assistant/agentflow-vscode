@@ -6,7 +6,7 @@
   },
   "displayName": "AgentFlow",
   "description": "Syntax Highlighting for AgentFlow Prompting Language",
-  "version": "0.1.0",
+  "version": "0.0.1",
   "engines": {
     "vscode": "^1.93.0"
   },
